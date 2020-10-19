@@ -1,0 +1,3266 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Chapter 2. Create a Rails Application · Ruby On Rails Tutorial</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Melvin Ch'ng">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="CreateARailsApplication.html" />
+    
+    
+    <link rel="prev" href="BeforeWeBegin.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Cover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="About.html">
+            
+                <a href="About.html">
+            
+                    
+                    About The Author
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Acknowledgements.html">
+            
+                <a href="Acknowledgements.html">
+            
+                    
+                    Acknowledgements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Introduction.html">
+            
+                <a href="Introduction.html">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="SUMMARY.html">
+            
+                <a href="SUMMARY.html">
+            
+                    
+                    Table of Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="RubyOnRailsInstallation.html">
+            
+                <a href="RubyOnRailsInstallation.html">
+            
+                    
+                    Part I. Ruby on Rails Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#chapter-1-windows-installation-guide-for-ruby-22x">
+            
+                    
+                    Chapter 1. Windows Installation Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#11-obtaining-required-files">
+            
+                    
+                    1.1 Obtaining Required Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#12-ruby-installation">
+            
+                    
+                    1.2 Ruby Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#13-devkit-installation-and-setup">
+            
+                    
+                    1.3 DevKit Installation and Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#14-nodejs-installation">
+            
+                    
+                    1.4 Node.JS Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#15-change-rubygems-source">
+            
+                    
+                    1.5 Change RubyGems’ Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#16-rails-installation">
+            
+                    
+                    1.6 Rails Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#17-create-a-rails-application">
+            
+                    
+                    1.7 Create a Rails Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#18-start-your-server">
+            
+                    
+                    1.8 Start your server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="WindowsInstallationV2.2.3.html">
+            
+                <a href="WindowsInstallationV2.2.3.html#19-generate-a-simple-mvc">
+            
+                    
+                    1.9 Generate a simple MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="LinuxInstallation.html">
+            
+                <a href="LinuxInstallation.html#chapter-2-ubuntu-linux-installation-guide">
+            
+                    
+                    Chapter 2. Ubuntu Linux Installation Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="LinuxInstallation.html">
+            
+                <a href="LinuxInstallation.html#21-ruby-installation">
+            
+                    
+                    2.1 Ruby Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="LinuxInstallation.html">
+            
+                <a href="LinuxInstallation.html#22-rails-installation">
+            
+                    
+                    2.2 Rails Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="LinuxInstallation.html">
+            
+                <a href="LinuxInstallation.html#23-nodejs-installation">
+            
+                    
+                    2.3 Node.JS Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="LinuxInstallation.html">
+            
+                <a href="LinuxInstallation.html#24-create-a-rails-application">
+            
+                    
+                    2.4 Create a Rails Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.5" data-path="LinuxInstallation.html">
+            
+                <a href="LinuxInstallation.html#25-start-your-server">
+            
+                    
+                    2.5 Start your server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.6" data-path="LinuxInstallation.html">
+            
+                <a href="LinuxInstallation.html#26-generate-a-simple-mvc">
+            
+                    
+                    2.6 Generate a simple MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="MacInstallation.html">
+            
+                <a href="MacInstallation.html#chapter-3-macos-installation-guide">
+            
+                    
+                    Chapter 3. MacOS Installation Guide
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="MacInstallation.html">
+            
+                <a href="MacInstallation.html#31-ruby-installation">
+            
+                    
+                    3.1 Ruby Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="MacInstallation.html">
+            
+                <a href="MacInstallation.html#32-homebrew-installation">
+            
+                    
+                    3.2 Homebrew Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="MacInstallation.html">
+            
+                <a href="MacInstallation.html#33-rails-installation">
+            
+                    
+                    3.3 Rails Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.4" data-path="MacInstallation.html">
+            
+                <a href="MacInstallation.html#34-create-a-rails-application">
+            
+                    
+                    3.4 Create a Rails Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.5" data-path="MacInstallation.html">
+            
+                <a href="MacInstallation.html#35-start-your-server">
+            
+                    
+                    3.5 Start your server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.6" data-path="MacInstallation.html">
+            
+                <a href="MacInstallation.html#36-generate-a-simple-mvc">
+            
+                    
+                    3.6 Generate a simple MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#chapter-4-windows-installation-guide-for-ruby-24x">
+            
+                    
+                    Chapter 4. Windows Installation Guide for Ruby 2.4.x
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#41-obtaining-required-files">
+            
+                    
+                    4.1 Obtaining Required Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#42-ruby-installation">
+            
+                    
+                    4.2 Ruby Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#43-msys2-installation-and-setup">
+            
+                    
+                    4.3 MSYS2 Installation and Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#44-nodejs-installation">
+            
+                    
+                    4.4 Node.JS Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#45-change-rubygems-source">
+            
+                    
+                    4.5 Change RubyGems’ Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.6" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#46-rails-installation">
+            
+                    
+                    4.6 Rails Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.7" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#47-create-a-rails-application">
+            
+                    
+                    4.7 Create a Rails Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.8" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#48-start-your-server">
+            
+                    
+                    4.8 Start your server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.9" data-path="WindowsInstallationV2.4.1.html">
+            
+                <a href="WindowsInstallationV2.4.1.html#49-generate-a-simple-mvc">
+            
+                    
+                    4.9 Generate a simple MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#chapter-5-windows-installation-guide-for-ruby-25x">
+            
+                    
+                    Chapter 5. Windows Installation Guide for Ruby 2.5.x
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#51-obtaining-required-files">
+            
+                    
+                    5.1 Obtaining Required Files
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#52-ruby-installation">
+            
+                    
+                    5.2 Ruby Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.3" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#53-msys2-installation-and-setup">
+            
+                    
+                    5.3 MSYS2 Installation and Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.4" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#54-nodejs-installation">
+            
+                    
+                    5.4 Node.JS Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.5" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#55-change-rubygems-source">
+            
+                    
+                    5.5 Change RubyGems’ Source
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.6" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#56-rails-installation">
+            
+                    
+                    5.6 Rails Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.7" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#57-create-a-rails-application">
+            
+                    
+                    5.7 Create a Rails Application
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.8" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#58-start-your-server">
+            
+                    
+                    5.8 Start your server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.9" data-path="WindowsInstallationV2.5.1.html">
+            
+                <a href="WindowsInstallationV2.5.1.html#59-generate-a-simple-mvc">
+            
+                    
+                    5.9 Generate a simple MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="RailsCrashCourse.html">
+            
+                <a href="RailsCrashCourse.html#part-ii-ruby-on-rails-crash-course">
+            
+                    
+                    Part II. Ruby On Rails Crash Course
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#chapter-1-ruby-basics">
+            
+                    
+                    Chapter 1. Ruby Basics
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1.1" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#11-ruby-irb">
+            
+                    
+                    1.1 Ruby IRB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.2" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#12-create-and-run-a-script">
+            
+                    
+                    1.2 Create And Run A Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.3" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#13-print-and-comment">
+            
+                    
+                    1.3 Print and Comment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.4" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#14-variable-scope-and-checking">
+            
+                    
+                    1.4 Variable Scope and Checking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.5" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#15-while-loop">
+            
+                    
+                    1.5 While Loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.6" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#16-array-and-loop">
+            
+                    
+                    1.6 Array and Loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.7" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#17-fixnum-loop">
+            
+                    
+                    1.7 Fixnum Loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.8" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#18-for-loop">
+            
+                    
+                    1.8 For Loop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.9" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#19-recursive">
+            
+                    
+                    1.9 Recursive
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.1.10" data-path="RubyBasics.html">
+            
+                <a href="RubyBasics.html#110-if-else-else-if-statement">
+            
+                    
+                    1.10 If, Else, Else If Statement
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#chapter-2-ruby-objects-and-methods">
+            
+                    
+                    Chapter 2. Ruby Objects and Methods
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#21-first-and-last-methods">
+            
+                    
+                    2.1 .first and .last Methods
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#22-include-method">
+            
+                    
+                    2.2 .include? Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#23-inspect-method">
+            
+                    
+                    2.3 .inspect Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#24-tostr-method">
+            
+                    
+                    2.4 .to_str Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#25-pluck-method">
+            
+                    
+                    2.5 .pluck Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#26-gsub-method">
+            
+                    
+                    2.6 .gsub! Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#27-all-method">
+            
+                    
+                    2.7 .all Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8" data-path="RubyObjectsAndMethods.html">
+            
+                <a href="RubyObjectsAndMethods.html#28-join-method">
+            
+                    
+                    2.8 .join Method
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="FirstRailsApplication.html">
+            
+                <a href="FirstRailsApplication.html">
+            
+                    
+                    Part III. First Rails Application
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="BeforeWeBegin.html">
+            
+                <a href="BeforeWeBegin.html#chapter-1-before-we-begin">
+            
+                    
+                    Chapter 1. Before We Begin
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1.1" data-path="BeforeWeBegin.html">
+            
+                <a href="BeforeWeBegin.html#11-terminal">
+            
+                    
+                    1.1 Terminal
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.2" data-path="BeforeWeBegin.html">
+            
+                <a href="BeforeWeBegin.html#12-model-view-controller">
+            
+                    
+                    1.2 Model, View, Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.3" data-path="BeforeWeBegin.html">
+            
+                <a href="BeforeWeBegin.html#13-text-editor">
+            
+                    
+                    1.3 Text Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.4" data-path="BeforeWeBegin.html">
+            
+                <a href="BeforeWeBegin.html#14-relational-database-basics">
+            
+                    
+                    1.4 Relational Database Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.5" data-path="BeforeWeBegin.html">
+            
+                <a href="BeforeWeBegin.html#15-database-manager-basics">
+            
+                    
+                    1.5 Database Manager Basics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.1.6" data-path="BeforeWeBegin.html">
+            
+                <a href="BeforeWeBegin.html#16-ruby-gems">
+            
+                    
+                    1.6 Ruby Gems
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#chapter-2-create-a-rails-application">
+            
+                    
+                    Chapter 2. Create a Rails Application
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.2.1" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#21-ruby-on-rails-mvc">
+            
+                    
+                    2.1 Ruby on Rails MVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.2" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#22-rails-scaffolding">
+            
+                    
+                    2.2 Rails Scaffolding
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.3" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#23-database-migration">
+            
+                    
+                    2.3 Database Migration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.4" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#24-start-a-web-server">
+            
+                    
+                    2.4 Start a Web Server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.5" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#25-insert-edit-delete-operation">
+            
+                    
+                    2.5 Insert, Edit, Delete Operation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.6" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#26-populating-database-with-seedsrb">
+            
+                    
+                    2.6 Populating Database with seeds.rb
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.7" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#27-more-rake-db-command">
+            
+                    
+                    2.7 More rake:db Command
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.8" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#28-scaffolding-with-references">
+            
+                    
+                    2.8 Scaffolding With References
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.9" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#29-create-a-new-page">
+            
+                    
+                    2.9 Create a New Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2.10" data-path="CreateARailsApplication.html">
+            
+                <a href="CreateARailsApplication.html#210-retrieve-objects-using-activerecord-from-multiple-table">
+            
+                    
+                    2.10 Retrieve Objects using ActiveRecord from Multiple Table
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#chapter-3-version-control-github">
+            
+                    
+                    Chapter 3. Version Control: Github
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.3.1" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#31-git">
+            
+                    
+                    3.1 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.2" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#32-github-desktop">
+            
+                    
+                    3.2 Github Desktop
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.3" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#33-create-a-new-repository">
+            
+                    
+                    3.3 Add Project to Github
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.4" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#34-github-website">
+            
+                    
+                    3.4 Github Website
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.5" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#35-add-collaborators">
+            
+                    
+                    3.5 Add Collaborators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.6" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#36-changes-and-deletions">
+            
+                    
+                    3.6 Changes and Deletions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.7" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#37-history">
+            
+                    
+                    3.7 History
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.8" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#38-branches">
+            
+                    
+                    3.8 Branches
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.9" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#39-merge">
+            
+                    
+                    3.9 Merge
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3.10" data-path="VersionControlGithub.html">
+            
+                <a href="VersionControlGithub.html#310-conflict">
+            
+                    
+                    3.10 Conflict
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="DeployYourApplication.html">
+            
+                <a href="DeployYourApplication.html#chapter-4-deploy-your-application">
+            
+                    
+                    Chapter 4. Deploy your Application
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.4.1" data-path="DeployYourApplication.html">
+            
+                <a href="DeployYourApplication.html#41-heroku-cli">
+            
+                    
+                    4.1 Heroku CLI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.2" data-path="DeployYourApplication.html">
+            
+                <a href="DeployYourApplication.html#42-prepare-to-deploy">
+            
+                    
+                    4.2 Prepare to Deploy
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.3" data-path="DeployYourApplication.html">
+            
+                <a href="DeployYourApplication.html#43-deploy-to-heroku">
+            
+                    
+                    4.3 Deploy to Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.4" data-path="DeployYourApplication.html">
+            
+                <a href="DeployYourApplication.html#44-database-migration">
+            
+                    
+                    4.4 Database Migration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4.5" data-path="DeployYourApplication.html">
+            
+                <a href="DeployYourApplication.html#45-some-useful-heroku-commands">
+            
+                    
+                    4.5 Some Useful Heroku Commands
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="SetupChallenge.html">
+            
+                <a href="SetupChallenge.html#chapter-5-10-minutes-setup-challenge">
+            
+                    
+                    Chapter 5. 10 Minutes Setup Challenge
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.5.1" data-path="SetupChallenge.html">
+            
+                <a href="SetupChallenge.html#51-video-transcript">
+            
+                    
+                    5.1 Video Transcript
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="LayoutAndStyling.html">
+            
+                <a href="LayoutAndStyling.html">
+            
+                    
+                    Part IV. Layout and Styling
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="BootstrapFramework.html">
+            
+                <a href="BootstrapFramework.html#chapter-1-bootstrap-framework">
+            
+                    
+                    Chapter 1. Bootstrap Framework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1.1" data-path="BootstrapFramework.html">
+            
+                <a href="BootstrapFramework.html#11-install-bootstrap-gem">
+            
+                    
+                    1.1 Install Bootstrap Gem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.2" data-path="BootstrapFramework.html">
+            
+                <a href="BootstrapFramework.html#12-use-bootstrap-gem">
+            
+                    
+                    1.2 Use Bootstrap Gem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.3" data-path="BootstrapFramework.html">
+            
+                <a href="BootstrapFramework.html#13-containers">
+            
+                    
+                    1.3 Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.4" data-path="BootstrapFramework.html">
+            
+                <a href="BootstrapFramework.html#14-header-and-footer">
+            
+                    
+                    1.4 Header and Footer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.5" data-path="BootstrapFramework.html">
+            
+                <a href="BootstrapFramework.html#15-style-a-form">
+            
+                    
+                    1.5 Style a Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.6" data-path="BootstrapFramework.html">
+            
+                <a href="BootstrapFramework.html#16-bootstrap-button-style">
+            
+                    
+                    1.6 Bootstrap Button Style
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.1.7" data-path="BootstrapFramework.html">
+            
+                <a href="BootstrapFramework.html#17-bootstrap-button-size">
+            
+                    
+                    1.7 Bootstrap Button Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="MaterializeFramework.html">
+            
+                <a href="MaterializeFramework.html#chapter-2-materialize-framework">
+            
+                    
+                    Chapter 2. Materialize Framework
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.2.1" data-path="MaterializeFramework.html">
+            
+                <a href="MaterializeFramework.html#21-install-materialize-gem">
+            
+                    
+                    2.1 Install Materialize Gem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.2" data-path="MaterializeFramework.html">
+            
+                <a href="MaterializeFramework.html#22-use-materialize-gem">
+            
+                    
+                    2.2 Use Materialize Gem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.3" data-path="MaterializeFramework.html">
+            
+                <a href="MaterializeFramework.html#23-add-nouislider">
+            
+                    
+                    2.3 Add noUiSlider
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.4" data-path="MaterializeFramework.html">
+            
+                <a href="MaterializeFramework.html#24-add-material-icon">
+            
+                    
+                    2.4 Add Material Icon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.5" data-path="MaterializeFramework.html">
+            
+                <a href="MaterializeFramework.html#25-header-and-footer">
+            
+                    
+                    2.5 Header and Footer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2.6" data-path="MaterializeFramework.html">
+            
+                <a href="MaterializeFramework.html#26-containers">
+            
+                    
+                    2.6 Containers
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ImplementingFeatures.html">
+            
+                <a href="ImplementingFeatures.html">
+            
+                    
+                    Part V. Implementing Features
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="AddCommentFeatureToAnyModel.html">
+            
+                <a href="AddCommentFeatureToAnyModel.html#chapter-1-add-comment-feature-to-any-model">
+            
+                    
+                    Chapter 1. Add Comment Feature to Any Model
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1.1" data-path="AddCommentFeatureToAnyModel.html">
+            
+                <a href="AddCommentFeatureToAnyModel.html#11-create-a-post-model">
+            
+                    
+                    1.1 Create a Post Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.2" data-path="AddCommentFeatureToAnyModel.html">
+            
+                <a href="AddCommentFeatureToAnyModel.html#12-install-and-configure-commontator-gem">
+            
+                    
+                    1.2 Install and Configure Commontator GEM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.1.3" data-path="AddCommentFeatureToAnyModel.html">
+            
+                <a href="AddCommentFeatureToAnyModel.html#13-testing-and-verifying-the-feature">
+            
+                    
+                    1.3 Testing and Verifying the Feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="JointTableAndBookingGEM.html">
+            
+                <a href="JointTableAndBookingGEM.html#chapter-2-joint-table-and-booking-gem">
+            
+                    
+                    Chapter 2. Joint Table and Booking GEM
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.2.1" data-path="JointTableAndBookingGEM.md$">
+            
+                <span>
+            
+                    
+                    2.1 Create Car and Store Model
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.2" data-path="JointTableAndBookingGEM.html">
+            
+                <a href="JointTableAndBookingGEM.html#22-joint-table-for-car-and-store">
+            
+                    
+                    2.2 Joint table for Car and Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.3" data-path="JointTableAndBookingGEM.html">
+            
+                <a href="JointTableAndBookingGEM.html#23-installing-bookable-gem">
+            
+                    
+                    2.3 Installing Bookable Gem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.4" data-path="JointTableAndBookingGEM.html">
+            
+                <a href="JointTableAndBookingGEM.html#24-routing-for-bookable-gem">
+            
+                    
+                    2.4 Routing for Bookable GEM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2.5" data-path="JointTableAndBookingGEM.html">
+            
+                <a href="JointTableAndBookingGEM.html#25-result-verification-with-sqlitestudio">
+            
+                    
+                    2.5 Result Verification with SQLiteStudio
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="SimpleCalendarGEM.html">
+            
+                <a href="SimpleCalendarGEM.html#chapter-3-simple-calendar-gem">
+            
+                    
+                    Chapter 3. Simple Calendar Gem
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.3.1" data-path="SimpleCalendarGEM.html">
+            
+                <a href="SimpleCalendarGEM.html#31-replaced-js-calendar-with-simplecalendar-gem">
+            
+                    
+                    3.1 Replaced JS Calendar with simple_calendar Gem
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3.2" data-path="ImplementingFeatures.html">
+            
+                <a href="ImplementingFeatures.html#32-removed-unnecessary-files-and-gem">
+            
+                    
+                    3.2 Removed unnecessary files and Gem
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" data-path="SearchFeature.html">
+            
+                <a href="SearchFeature.html#chapter-4-search-feature">
+            
+                    
+                    Chapter 4. Search Feature
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.4.1" data-path="SearchFeature.html">
+            
+                <a href="SearchFeature.html#41-create-a-page-for-search">
+            
+                    
+                    4.1 Create a page for Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.2" data-path="SearchFeature.md#42-create-a-search-bar">
+            
+                <span>
+            
+                    
+                    4.2 Create a Search Bar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.3" data-path="SearchFeature.html">
+            
+                <a href="SearchFeature.html#43-adding-a-simple-search-feature">
+            
+                    
+                    4.3 Adding a simple search feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.4" data-path="SearchFeature.html">
+            
+                <a href="SearchFeature.html#44-how-to-query-in-sqlitestudio">
+            
+                    
+                    4.4 How to Query in SQLiteStudio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.5" data-path="SearchFeature.html">
+            
+                <a href="SearchFeature.html#45-wildcards-for-like-operator">
+            
+                    
+                    4.5 Wildcards for LIKE Operator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.6" data-path="SearchFeature.html">
+            
+                <a href="SearchFeature.html#46-search-across-multiple-tables">
+            
+                    
+                    4.6 Search across Multiple Tables
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4.7" data-path="SearchFeature.html">
+            
+                <a href="SearchFeature.html#47-testing-and-verification">
+            
+                    
+                    4.7 Testing and Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" data-path="AddingUserToAnyTable.html">
+            
+                <a href="AddingUserToAnyTable.html#chapter-5-adding-user-to-any-table">
+            
+                    
+                    Chapter 5. Adding User to Any Table
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.5.1" data-path="AddingUserToAnyTable.html">
+            
+                <a href="AddingUserToAnyTable.html#51-adding-user-association">
+            
+                    
+                    5.1 Adding User Association
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5.2" data-path="AddingUserToAnyTable.html">
+            
+                <a href="AddingUserToAnyTable.html#52-the-famous-currentuser">
+            
+                    
+                    5.2 The Famous current_user
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5.3" data-path="AddingUserToAnyTable.html">
+            
+                <a href="AddingUserToAnyTable.html#53-more-testing-and-function-verification">
+            
+                    
+                    5.3 More Testing and Function Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6" data-path="GoogleMap.html">
+            
+                <a href="GoogleMap.html#chapter-6-google-map">
+            
+                    
+                    Chapter 6. Google Map
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.6.1" data-path="GoogleMap.html">
+            
+                <a href="GoogleMap.html#61-initial-setup">
+            
+                    
+                    6.1 Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6.2" data-path="GoogleMap.html">
+            
+                <a href="GoogleMap.html#62-configure-gmaps4rails">
+            
+                    
+                    6.2 Configure gmaps4rails
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6.3" data-path="GoogleMap.html">
+            
+                <a href="GoogleMap.html#63-obtain-api-key">
+            
+                    
+                    6.3 Obtain API Key
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6.4" data-path="GoogleMap.html">
+            
+                <a href="GoogleMap.html#64-add-google-map-to-view">
+            
+                    
+                    6.4 Add Google Map To View
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.6.5" data-path="GoogleMap.html">
+            
+                <a href="GoogleMap.html#65-dynamic-map-marker">
+            
+                    
+                    6.5 Dynamic Map Marker
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7" data-path="ShortestPathFinder.html">
+            
+                <a href="ShortestPathFinder.html#chapter-7-shortest-path-finder">
+            
+                    
+                    Chapter 7. Shortest Path Finder
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.7.1" data-path="ShortestPathFinder.html">
+            
+                <a href="ShortestPathFinder.html#71-initial-setup">
+            
+                    
+                    7.1 Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.2" data-path="ShortestPathFinder.html">
+            
+                <a href="ShortestPathFinder.html#72-distance-calculation">
+            
+                    
+                    7.2 Distance Calculation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.3" data-path="ShortestPathFinder.html">
+            
+                <a href="ShortestPathFinder.html#73-dijkstra-library">
+            
+                    
+                    7.3 Dijkstra Library
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.4" data-path="ShortestPathFinder.html">
+            
+                <a href="ShortestPathFinder.html#74-search-and-result-page">
+            
+                    
+                    7.4 Search and Result Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.5" data-path="ShortestPathFinder.html">
+            
+                <a href="ShortestPathFinder.html#75-define-search-and-result-in-controller">
+            
+                    
+                    7.5 Define Search and Result in Controller
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.7.6" data-path="ShortestPathFinder.html">
+            
+                <a href="ShortestPathFinder.html#76-test-and-verify-feature">
+            
+                    
+                    7.6 Test and Verify Feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8" data-path="DataAnalysis.html">
+            
+                <a href="DataAnalysis.html#chapter-8-data-analysis">
+            
+                    
+                    Chapter 8. Data Analysis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.8.1" data-path="DataAnalysis.html">
+            
+                <a href="DataAnalysis.html#81-initial-setup">
+            
+                    
+                    8.1 Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8.2" data-path="DataAnalysis.html">
+            
+                <a href="DataAnalysis.html#82-import-data-from-csv-file">
+            
+                    
+                    8.2 Import Data From CSV File
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8.3" data-path="DataAnalysis.html">
+            
+                <a href="DataAnalysis.html#83-output-the-table">
+            
+                    
+                    8.3 Output The Table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8.4" data-path="DataAnalysis.html">
+            
+                <a href="DataAnalysis.html#84-group-by-and-mean">
+            
+                    
+                    8.4 Group By And Mean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8.5" data-path="DataAnalysis.html">
+            
+                <a href="DataAnalysis.html#85-filter-by-string">
+            
+                    
+                    8.5 Filter By (String)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8.6" data-path="DataAnalysis.html">
+            
+                <a href="DataAnalysis.html#86-filter-by-value">
+            
+                    
+                    8.6 Filter By (Value)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.8.7" data-path="DataAnalysis.html">
+            
+                <a href="DataAnalysis.html#87-sort-by-value">
+            
+                    
+                    8.7 Sort By (Value)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9" data-path="PlottingAChart.html">
+            
+                <a href="PlottingAChart.html#chapter-9-plotting-a-chart">
+            
+                    
+                    Chapter 9. Plotting A Chart
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.9.1" data-path="PlottingAChart.html">
+            
+                <a href="PlottingAChart.html#91-initial-setup">
+            
+                    
+                    9.1 Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.2" data-path="PlottingAChart.html">
+            
+                <a href="PlottingAChart.html#92-hash-and-array-explanation">
+            
+                    
+                    9.2 Hash and Array Explanation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.3" data-path="PlottingAChart.html">
+            
+                <a href="PlottingAChart.html#93-array-of-hash-to-array-of-array">
+            
+                    
+                    9.3 Array of Hash to Array of Array
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.4" data-path="PlottingAChart.html">
+            
+                <a href="PlottingAChart.html#94-bar-chart">
+            
+                    
+                    9.4 Bar Chart
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.9.5" data-path="PlottingAChart.html">
+            
+                <a href="PlottingAChart.html#95-pie-chart">
+            
+                    
+                    9.5 Pie Chart
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.10" data-path="Devise.html">
+            
+                <a href="Devise.html#chapter-10-devise">
+            
+                    
+                    Chapter 10. Devise
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="OtherRailsApplication.html">
+            
+                <a href="OtherRailsApplication.html">
+            
+                    
+                    Part VI. Other Rails Application
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="RESTfulJSONAPI.html">
+            
+                <a href="RESTfulJSONAPI.html#chapter-1-restful-json-api">
+            
+                    
+                    Chapter 1. RESTful JSON API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="RESTfulJSONAPI.html">
+            
+                <a href="RESTfulJSONAPI.html#11-initial-setup">
+            
+                    
+                    1.1 Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.2" data-path="RESTfulJSONAPI.html">
+            
+                <a href="RESTfulJSONAPI.html#12-controller-setup">
+            
+                    
+                    1.2 Controller Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.3" data-path="RESTfulJSONAPI.html">
+            
+                <a href="RESTfulJSONAPI.html#13-http-post-script">
+            
+                    
+                    1.3 HTTP POST Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.4" data-path="RESTfulJSONAPI.html">
+            
+                <a href="RESTfulJSONAPI.html#14-run-the-script">
+            
+                    
+                    1.4 Run the Script
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.1.5" data-path="RESTfulJSONAPI.html">
+            
+                <a href="RESTfulJSONAPI.html#15-clean-up">
+            
+                    
+                    1.5 Clean Up
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2" data-path="ActionCable.html">
+            
+                <a href="ActionCable.html#chapter-2-actioncable">
+            
+                    
+                    Chapter 2. ActionCable
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.2.1" data-path="ActionCable.html">
+            
+                <a href="ActionCable.html#21-initial-setup">
+            
+                    
+                    2.1 Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.2" data-path="ActionCable.html">
+            
+                <a href="ActionCable.html#22-configure-model-channel-and--job">
+            
+                    
+                    2.2 Configure Model, Channel, and Job
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.3" data-path="ActionCable.html">
+            
+                <a href="ActionCable.html#23-testing-and-verification">
+            
+                    
+                    2.3 Testing and Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.2.4" data-path="ActionCable.html">
+            
+                <a href="ActionCable.html#24-deploy-feature-to-heroku">
+            
+                    
+                    2.4 Deploy Feature To Heroku
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3" data-path="OfflineApplicationCache.html">
+            
+                <a href="OfflineApplicationCache.html#chapter-3-offline-application-cache">
+            
+                    
+                    Chapter 3. Offline Application Cache
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.3.1" data-path="OfflineApplicationCache.html">
+            
+                <a href="OfflineApplicationCache.html#31-setup">
+            
+                    
+                    3.1 Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.3.2" data-path="OfflineApplicationCache.html">
+            
+                <a href="OfflineApplicationCache.html#32-testing-and-verification">
+            
+                    
+                    3.2 Testing and Verification
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4" data-path="RailsJSONB.html">
+            
+                <a href="RailsJSONB.html#chapter-4-rails-jsonb">
+            
+                    
+                    Chapter 4. Rails JSONB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.4.1" data-path="RailsJSONB.html">
+            
+                <a href="RailsJSONB.html#41-initial-setup">
+            
+                    
+                    4.1 Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4.2" data-path="RailsJSONB.html">
+            
+                <a href="RailsJSONB.html#42-add-a-jsonb-column-to-existing-table">
+            
+                    
+                    4.2 Add a JSONB Column To Existing Table
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4.3" data-path="RailsJSONB.html">
+            
+                <a href="RailsJSONB.html#43-use-jsonb-column-to-in-form">
+            
+                    
+                    4.3 Use JSONB Column To In Form
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11.4.4" data-path="RailsJSONB.html">
+            
+                <a href="RailsJSONB.html#44-testing-and-validation">
+            
+                    
+                    4.4 Testing and Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Chapter 2. Create a Rails Application</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p><em>Last modified: Thu Aug 16 2018 22:49:02 GMT+0800 (Malay Peninsula Standard Time)</em></p>
+</blockquote>
+<h2 id="chapter-2-create-a-rails-application"><a name="chapter-2-create-a-rails-application" class="plugin-anchor" href="#chapter-2-create-a-rails-application"><i class="fa fa-link" aria-hidden="true"></i></a>Chapter 2. Create a Rails Application</h2>
+<p>In this Chapter, we are going to create a sample Ruby on Rails application. By default, <code>SQLite3</code> will be serve as the database engine when you generate a website. However, PostgreSQL will be serve as the database engine when you deploy it to Heroku PaaS. </p>
+<h3 id="21-ruby-on-rails-mvc"><a name="21-ruby-on-rails-mvc" class="plugin-anchor" href="#21-ruby-on-rails-mvc"><i class="fa fa-link" aria-hidden="true"></i></a>2.1 Ruby on Rails MVC</h3>
+<p>Ruby on Rails uses Model, View, Controller (MVC) architecture. Refer to Chapter 1.2 to for MVC explanation.</p>
+<p>Model, usually located at the directory <code>MyApp/models/</code>, is where you should declare the associations and SQL Query for a specific purpose. Rails support six types of associations: &#x201C;<em>belongs_to</em>&#x201D;, &#x201C;<em>has_one</em>&#x201D;, &#x201C;<em>has_many</em>&#x201D;, &#x201C;<em>has_many</em> <em>:through</em>&#x201D;, &#x201C;<em>has_one :through</em>&#x201D;, and &#x201C;<em>has_and_belongs_to_many</em>&#x201D;. In Chapter 2.2, <em>Scaffolding with references</em>, we will see an example that uses &#x201C;<em>belongs_to</em>&#x201D; association. The naming conventions for the model is based on the name of your View and Controller. For example, if you have a View folder named <em>Comments</em> and controller named <em>Comments</em>, your model&#x2019;s file name should be <code>comment.rb</code>.</p>
+<p><em>Note: </em>comment<em>.rb is singular.</em></p>
+<p>View, usually located at the directory <code>MyApp/views/</code>, is where you style your page. It is the front end where it display messages to user. Your header and footer file should belongs to here. All files should end with the extension <code>.html.erb</code> or if you are familiar with HAML, you can replace the extension with .haml. Your CSS stylesheet should be located at <code>MyApp/assets/stylesheets/</code> and the naming conventions for the stylesheet will be based on your <em>View</em>. For example, if you have a View folder named <em>Comments</em>, your stylesheet should named <code>comments.scss</code>. For Javascripts, it should be located at <code>MyApp/assets/javascript/</code>.</p>
+<p><em>Note: You should also rename your application.css file to <code>application.scss</code>.</em></p>
+<p>Controller, usually located at the directory <code>MyApp/controllers/</code>, the place where all the &#x201C;things&#x201D; are happening. This is the place where you should declare all your operations. The naming conventions for the controller will based on the name of your View. For example, if you have a View folder named Comments, your controller for Comments should be <code>comments_controller.rb</code>.</p>
+<p>By the time you are done with this part, <em>ActiveRecord Associations</em>, you should be able to identify the Model, View, and Controller components correctly.</p>
+<h3 id="22-rails-scaffolding"><a name="22-rails-scaffolding" class="plugin-anchor" href="#22-rails-scaffolding"><i class="fa fa-link" aria-hidden="true"></i></a>2.2 Rails Scaffolding</h3>
+<p><code>Scaffold</code> command generates major pieces of an application. A model, view, and controller will be generated in just one line of code. To do this, enter the code below in your terminal window. Do note that Post is the name of the MVC and the first character should begin with a capital letter.</p>
+<p><code>rails generate scaffold Post title:string content:text</code></p>
+<p>The <code>scaffold</code> command will generate a few folders and files in your application as discussed in Chapter 2.1. This includes a Post model, <code>Posts</code> controller, Post view to list, create, edit, and delete post(s). Figure 2.2.1 below shows the operation and files created.</p>
+<p><img src="142.png" alt=""></p>
+<p>Figure 2.2.1: Files created when a <code>scaffold</code> command is used</p>
+<p>If you have done a mistake and would like to undo the operation, replace the word generate with destroy in the command you have ran and run it again. All the files that was just created will be removed. Figure 2.2.2 shows the operation and the output of files being removed.</p>
+<p><code>rails destroy scaffold Post title:string content:text</code></p>
+<p><img src="143.png" alt=""></p>
+<p>Figure 2.2.2: Removed a <code>scaffold</code> using destroy command </p>
+<h3 id="23-database-migration"><a name="23-database-migration" class="plugin-anchor" href="#23-database-migration"><i class="fa fa-link" aria-hidden="true"></i></a>2.3 Database Migration</h3>
+<p>For each model that are created, modified, and deleted, a migration operation has to be done in order for the Web Application to rebuild the database. To this, run the command below. Figure 2.3.1 shows the terminal window that show a database is migrated. </p>
+<p><code>rake db:migrate</code></p>
+<p>However, to destroy a database, you may have to manually delete the file <code>development.sqlite3</code> file in db folder. Whenever you receive an error stating that the table is already exists, the quickest way resolving this error is to delete the file <code>development.sqlite3</code> in db folder and run a migration again. </p>
+<p><img src="144.png" alt=""></p>
+<p>Figure 2.3.1: A database table is migrated</p>
+<h3 id="24-start-a-web-server"><a name="24-start-a-web-server" class="plugin-anchor" href="#24-start-a-web-server"><i class="fa fa-link" aria-hidden="true"></i></a>2.4 Start a Web Server</h3>
+<p>Run the command rails server or rails s at the root directory of your Web Application. Be sure that you are at the root directory of your directory of your Web Application.</p>
+<p><img src="145.png" alt=""><br>Figure 2.4.1: A Rails server is started</p>
+<p>Based on Figure 2.4.1, we see that there are two links on terminal output. Both of the addresses may be different. The default address for your Web Server should be <code>localhost:3000</code>. However, you may get a different address depending on your operating system and configuration. Try the other address if <code>localhost:3000</code> is not working for you.</p>
+<p>At some point, you may get an error saying that A server is already running. Check <code>/PATH/server.pid</code>. To fix this, go to the folder mentioned and remove at the server.pid. I do not have the screenshot of that as it is really rare to encounter that issue, but at some point, it will happen.</p>
+<h3 id="25-insert-edit-delete-operation"><a name="25-insert-edit-delete-operation" class="plugin-anchor" href="#25-insert-edit-delete-operation"><i class="fa fa-link" aria-hidden="true"></i></a>2.5 Insert, Edit, Delete Operation</h3>
+<p>Navigate to <code>localhost:3000/posts</code> to view the index page of Posts. Figure 2.5.1 shows the index page of Posts. The index of the page is the based on the name you used on the scaffold command earlier. Do note that the path is plural, Posts. If you are unable to access the page, you may have a different path. Refer to Chapter 2.4 to learn more about the path.</p>
+<p><img src="146.png" alt=""></p>
+<p>Figure 2.5.1: Index page of Posts</p>
+<p>Create a few posts and we can see our Post that we created in SQLiteStudio. Refer to section 1.5 to learn how to add your database table to SQLiteStudio. Refresh window by pressing the blue refresh icon, <img src="147.png" alt="">. The data that you have entered will show up in the database. The data shown in the database should match the data shown in the index of Posts. Figure 2.5.2 shows the result of the operation. The logs of the Web Server show the detail operation of inserting and committing a transaction successfully.</p>
+<p><img src="148.png" alt=""></p>
+<p>Figure 2.5.2: Data in SQLiteStudio matches the information shown in Posts index</p>
+<h3 id="26-populating-database-with-seedsrb"><a name="26-populating-database-with-seedsrb" class="plugin-anchor" href="#26-populating-database-with-seedsrb"><i class="fa fa-link" aria-hidden="true"></i></a>2.6 Populating Database with <code>seeds.rb</code></h3>
+<p>The file in db/seeds.rb allows developer to feed default values easily and quickly to an application. In the seeds file, you have full access to all the classes and methods you defined within your application. </p>
+<p>Assume that you have a Post model. In the model, there is only one fields: title and text. To populate the database with data, we can use create command. If you have a model with reference key, do make sure that the content exists in the table that the reference key is pointing to.</p>
+<pre><code class="lang-ruby"><span class="hljs-comment">#MyApp/app/db/seeds.rb</span>
+
+Post.create(<span class="hljs-symbol">title:</span> <span class="hljs-string">&apos;Hello World 1&apos;</span>, <span class="hljs-symbol">content:</span> <span class="hljs-string">&apos;Test 1&apos;</span>)   
+Post.create(<span class="hljs-symbol">title:</span> <span class="hljs-string">&apos;Hello World 2&apos;</span>, <span class="hljs-symbol">content:</span> <span class="hljs-string">&apos;Test 2&apos;</span>)  
+Post.create(<span class="hljs-symbol">title:</span> <span class="hljs-string">&apos;Hello World 3&apos;</span>, <span class="hljs-symbol">content:</span> <span class="hljs-string">&apos;Test 3&apos;</span>)  
+Post.create(<span class="hljs-symbol">title:</span> <span class="hljs-string">&apos;Hello World 4&apos;</span>, <span class="hljs-symbol">content:</span> <span class="hljs-string">&apos;Test 4&apos;</span>)
+</code></pre>
+<p>Figure 2.6.1 shows the content of the seeds.rb with the sample that shown in the table above.</p>
+<p><img src="149.png" alt=""></p>
+<p>Figure 2.6.1: Content in <code>seeds.rb</code></p>
+<p>To feed the file to the database, run the command below. Do note that <code>rake db:seed</code> will not output in the terminal unless there is an error in the <code>seed.rb</code>. Figure 2.6.2 shows the data is fetched to the database successfully without any issue.</p>
+<p><img src="150.png" alt=""><br>Figure 2.6.2. <code>rake db:seed</code> command ran successfully without output any log.</p>
+<p>To verify the result, we can view the data in the Posts table in SQLiteStudio database manager. Figure 2.6.3 shows Posts table is populated and matched with the data in <code>seeds.rb</code> as shown in Figure 2.6.1.</p>
+<p><img src="151.png" alt=""></p>
+<p>Figure 2.6.3. Posts table with populated data from <code>seeds.rb</code></p>
+<p>If you are unable to achieve the step above, remove your database table and run the migration. After the migration is successfully, fetch the data using the command <code>rake db:seed</code>. </p>
+<h3 id="27-more-rake-db-command"><a name="27-more-rake-db-command" class="plugin-anchor" href="#27-more-rake-db-command"><i class="fa fa-link" aria-hidden="true"></i></a>2.7 More <code>rake db</code> Command</h3>
+<p>This table is compiled by <a href="http://jacopretorius.net/about/" target="_blank">Jaco Pretorites</a>. He combined the information shown in Table 2.7.1 from StackOverflow and <a href="https://github.com/rails/rails/blob/master/activerecord/lib/active_record/railties/databases.rake" target="_blank">Rails source code</a>. In his <a href="http://jacopretorius.net/2014/02/all-rails-db-rake-tasks-and-what-they-do.html" target="_blank">website</a>, he explains all different Rails db Rake Tasks and what each task they do. Personally, I have not tried all the commands and do not guarantee it will work. In order for the commands below to work, you have to add rake to each of the command. For example, for the first command in the table, we have to use <code>rake db:create</code>.</p>
+<p>Table 2.7.1: All Rails db Rake Tasks and What They Do</p>
+<table>
+<thead>
+<tr>
+<th><strong>Command</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>db:create</td>
+<td>Creates the database for the current RAILS_ENV environment. If RAILS_ENV is not specified it defaults to the development and test databases.</td>
+</tr>
+<tr>
+<td>db:create:all</td>
+<td>Creates the database for all environments.</td>
+</tr>
+<tr>
+<td>db:drop</td>
+<td>Drops the database for the current RAILS_ENV environment. If RAILS_ENV is not specified it defaults to the development and test databases.</td>
+</tr>
+<tr>
+<td>db:drop:all</td>
+<td>Drops the database for all environments.</td>
+</tr>
+<tr>
+<td>db:migrate</td>
+<td>Runs migrations for the current environment that have not run yet. By default it will run migrations only in the development environment.</td>
+</tr>
+<tr>
+<td>db:migrate:redo</td>
+<td>Runs db:migrate:down and db:migrate:up or db:migrate:rollback and db:migrate:migrate depending on the specified migration. I usually run this after creating and running a new migration to ensure the migration is reversible.</td>
+</tr>
+<tr>
+<td>db:migrate:up</td>
+<td>Runs the up for the given migration VERSION.</td>
+</tr>
+<tr>
+<td>db:migrate:down</td>
+<td>Runs the down for the given migration VERSION.</td>
+</tr>
+<tr>
+<td>db:migrate:status</td>
+<td>Displays the current migration status.</td>
+</tr>
+<tr>
+<td>db:migrate:rollback</td>
+<td>Rolls back the last migration.</td>
+</tr>
+<tr>
+<td>db:version</td>
+<td>Prints the current schema version.</td>
+</tr>
+<tr>
+<td>db:forward</td>
+<td>Pushes the schema to the next version.</td>
+</tr>
+<tr>
+<td>db:seed</td>
+<td>Runs the db/seeds.rb file.</td>
+</tr>
+<tr>
+<td>db:schema:load</td>
+<td>Loads the schema into the current environment&#x2019;s database.</td>
+</tr>
+<tr>
+<td>db:schema:dump</td>
+<td>Dumps the current environment&#x2019;s schema to db/schema.rb.</td>
+</tr>
+<tr>
+<td>db:setup</td>
+<td>Runs db:schema:load and db:seed.</td>
+</tr>
+<tr>
+<td>db:reset</td>
+<td>db:drop and db:setup.</td>
+</tr>
+<tr>
+<td>db:migrate:reset</td>
+<td>Runs db:drop, db:create and db:migrate.</td>
+</tr>
+<tr>
+<td>db:test:prepare</td>
+<td>Check for pending migrations and load the test schema. (If you run rake without any arguments it will do this by default.)</td>
+</tr>
+<tr>
+<td>db:test:clone</td>
+<td>Recreate the test database from the current environment&#x2019;s database schema.</td>
+</tr>
+<tr>
+<td>db:test:clone_structure</td>
+<td>Similar to db:test:clone, but it will ensure that your test database has the same structure, including charsets and collations, as your current environment&#x2019;s database.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="28-scaffolding-with-references"><a name="28-scaffolding-with-references" class="plugin-anchor" href="#28-scaffolding-with-references"><i class="fa fa-link" aria-hidden="true"></i></a>2.8 Scaffolding With References</h3>
+<p>Assume that you have created Post with scaffold command. Now, you want to add comment feature to each of the post. To achieve that, we can scaffold with references. To do that, enter the command below and migrate the database after all the files are created successfully. If you wished to create just the controller or model, you can replace the scaffold command with controller and model. </p>
+<p><code>rails generate scaffold Comment comment:text post:references</code></p>
+<p>Based on the command above, we are creating Comment with two arguments, comment and post. comment is a text and post is a reference to post model.</p>
+<p>Now, each of the comment that you create will belong to each of the post. In Figure 2.8.1, by viewing your Comment entity in the SQLiteStudio, you will notice that an attribute, <code>post_id</code>, is created automatically. <code>post_id</code> will store the ID of the post that each comment reference to.</p>
+<p><img src="152.png" alt=""></p>
+<p>Figure 2.8.1: Comments table in SQLiteStudio Database Manager.</p>
+<p>Navigate to <code>localhost:3000/comments</code> to view the index page of Comments and populate some data by creating new comments. Figure 2.8.2 shows a sample input of a new comment. <code>Post</code> field will accepts integer only and the integer must exist within the <code>ID</code> column in <code>Post</code> table. If you entered the value 1 in the Post field, the new comment that you create will associate itself to the specific post with the <code>ID</code> you enter in the <code>Post</code> table.</p>
+<p><img src="153.png" alt=""></p>
+<p>Figure 2.8.2: Creating new comment with reference <code>ID</code></p>
+<p>Figure 2.8.3 shows the Comments table and Index page. It is usual that Post column in the index page is showing some garbage value since the view does not reference to the correct parameter in the table. To fix this, refer to Chapter 2.10.</p>
+<p><img src="154.png" alt=""></p>
+<p>Figure 2.8.3: The result of the operation</p>
+<p>When a scaffold command with reference is used, associations are added automatically to the models. In Comment.rb, we see that belongs_to :post<em> </em>association is added by default. This simply means that post_id is referencing to Posts<em> </em>table. Figure 2.8.4 shows the Relation Schema of the Database</p>
+<p><img src="155.png" alt=""></p>
+<p>Figure 2.8.4: Relation Schema of the Database table Posts and Comments</p>
+<p>If you the Model is created manually, you have to add the associate by yourself. You have to setup the associate in order for the Web Application to behave correctly during Insert, Update, and Delete operations. You can not simply add an associate without understand what it is doing. It will give you a lot of trouble if you do so.</p>
+<h3 id="29-create-a-new-page"><a name="29-create-a-new-page" class="plugin-anchor" href="#29-create-a-new-page"><i class="fa fa-link" aria-hidden="true"></i></a>2.9 Create a New Page</h3>
+<p>A page can be created under any controller. However, the page method in the controller has the match the filename of your view. To create a new page in Post controller, navigate to the directory below and add the code in Table 2.9.1 to controller. Figure 2.9.1 shows the result after the code is added.</p>
+<p>Table 2.9.1: Code to add to controller</p>
+<pre><code class="lang-ruby"><span class="hljs-comment">#MyApp/controllers/posts_controller.rb</span>
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">more</span></span>
+
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p><img src="156.png" alt=""></p>
+<p>Figure 2.9.1: Result of the code added</p>
+<p>Create a View file with filename and path listed below as shown in Table 2.7.2. Add <code>Hello World!</code> to the file that you create. Figure 2.9.2 shows the result of the operation in Table 2.9.2.</p>
+<p>Table 2.9.2: Create a view file and insert <code>Hello World!</code></p>
+<pre><code class="lang-ruby"><span class="hljs-comment">#MyApp/views/posts/more.html.erb</span>
+
+Hello World!
+</code></pre>
+<p><img src="157.png" alt=""></p>
+<p>Figure 2.9.2: Result of the operation shows in Table 2.9.2</p>
+<p>The last step would define and tell your web server where to find and retrieve the file. Add the following code to the file shown in Table 2.9.3. Figure 2.9.3 screenshot with the operations carried out is shown below. <code>more_info</code> is the route that you will need to enter in your web browser to view the content of the page while  posts is the folder in the directory <code>MyApp/views</code> and more is the of the file where you want your Web Server to fetch. </p>
+<p>Table 2.9.3: Setting up the <code>routes.rb</code></p>
+<pre><code class="lang-ruby"><span class="hljs-comment">#MyApp/config/routes.rb</span>
+
+get <span class="hljs-string">&apos;more_info&apos;</span>, <span class="hljs-symbol">to:</span> <span class="hljs-string">&apos;posts#more&apos;</span>
+</code></pre>
+<p><img src="158.png" alt=""></p>
+<p>Figure 2.9.3: The code, as shown in line 6,  is added to <code>routes.rb</code></p>
+<p>To view the page that you have created, insert the address below in your Web Browser. Figure 2.9.3 shows the <code>Hello World!</code> is rendered.</p>
+<p><code>localhost:3000/more_info</code></p>
+<p><img src="159.png" alt="">Figure 2.9.4: <code>Hello World!</code> is shown in the page</p>
+<p>If you are unable to access this page, check your route and local address to your Web Application.</p>
+<h3 id="210-retrieve-objects-using-activerecord-from-multiple-table"><a name="210-retrieve-objects-using-activerecord-from-multiple-table" class="plugin-anchor" href="#210-retrieve-objects-using-activerecord-from-multiple-table"><i class="fa fa-link" aria-hidden="true"></i></a>2.10 Retrieve Objects using ActiveRecord from Multiple Table</h3>
+<p>The advantage of using ActiveRecord is you can easily retrieve information from the other table that contain reference key to the specific table. Usually, we have to write SQL (Structured Query Language) query to achieve the same operation. To see the magic, let&#x2019;s begin by modifying the controller as shown in Table 2.10.1. The result of the modification is shown in Figure 2.10.1.</p>
+<p>Table 2.10.1: Code to add to controller</p>
+<pre><code class="lang-ruby"><span class="hljs-comment">#MyApp/controller/posts_controller.rb</span>
+<span class="hljs-comment">#Add under def more</span>
+
+@comments = Comment.all
+</code></pre>
+<p>Do note that Comment is a case sensitive variable. This will reference to the Comment model while <code>.all</code> means it will get field from the Comment model. The equivalent of <code>Comment.all</code> in SQL is shown as below.</p>
+<pre><code class="lang-sql"><span class="hljs-keyword">SELECT</span> * <span class="hljs-keyword">FROM</span> Comments
+</code></pre>
+<p><code>@comments</code> in the controller is an instance variable and is available to all methods within the class and available to View. If you removed the ampersand, <code>@</code>, the variable is only available within the class.</p>
+<p><img src="160.png" alt=""></p>
+<p>Figure 2.10.1: Result of the controller</p>
+<p>Add the code as shown in Table 2.10.2 to the file specified below. Figure 2.10.2 shows the result of the code added to the file.</p>
+<p>Table 2.10.2: Code to add to View</p>
+<pre><code class="lang-erb"><span class="xml">#MyApp/view/posts/posts/more.html.erb
+
+<span class="hljs-comment">&lt;!--See below; This is how you comment in Ruby ERB --&gt;</span>  
+<span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>More Information<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>  
+
+<span class="hljs-tag">&lt;<span class="hljs-name">table</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">thead</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>  
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Post ID<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>  
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>  
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Content<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>  
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Comment ID<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>  
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span>&gt;</span>Comment<span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>  
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>  
+      <span class="hljs-tag">&lt;<span class="hljs-name">th</span> <span class="hljs-attr">colspan</span>=<span class="hljs-string">&quot;3&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">th</span>&gt;</span>  
+    <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>  
+  <span class="hljs-tag">&lt;/<span class="hljs-name">thead</span>&gt;</span>  
+  <span class="hljs-tag">&lt;<span class="hljs-name">tbody</span>&gt;</span>  
+    <span class="hljs-comment">&lt;!-- @comments is passed from controller to view --&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">%</span></span></span><span class="ruby"> @comments.each <span class="hljs-keyword">do</span> |comment| </span><span class="xml"><span class="hljs-tag">%&gt;</span>           <span class="hljs-comment">&lt;!-- for loop --&gt;</span>  
+      <span class="hljs-tag">&lt;<span class="hljs-name">tr</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> comment.post.id </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>         <span class="hljs-comment">&lt;!--get Post ID using reference --&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> comment.post.title </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>      <span class="hljs-comment">&lt;!--get Post title using ref --&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> comment.post.content </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>    <span class="hljs-comment">&lt;!--get Post content using ref --&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> comment.id </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>              <span class="hljs-comment">&lt;!--get Comment ID --&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> comment.comment </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>         <span class="hljs-comment">&lt;!--get Comment from Comment --&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> link_to <span class="hljs-string">&apos;Show Comment&apos;</span>, comment </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> link_to <span class="hljs-string">&apos;Edit Comment&apos;</span>, edit_comment_path(comment) </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> link_to <span class="hljs-string">&apos;Destroy Comment&apos;</span>, comment, <span class="hljs-symbol">method:</span> <span class="hljs-symbol">:delete</span>, <span class="hljs-symbol">data:</span> { <span class="hljs-symbol">confirm:</span> <span class="hljs-string">&apos;Are you sure?&apos;</span> } </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> link_to <span class="hljs-string">&apos;Show Post&apos;</span>, comment.post </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> link_to <span class="hljs-string">&apos;Edit Post&apos;</span>, edit_post_path(comment.post) </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>  
+        <span class="hljs-tag">&lt;<span class="hljs-name">td</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">%=</span></span></span><span class="ruby"> link_to <span class="hljs-string">&apos;Destroy Post&apos;</span>, comment.post, <span class="hljs-symbol">method:</span> <span class="hljs-symbol">:delete</span>, <span class="hljs-symbol">data:</span> { <span class="hljs-symbol">confirm:</span> <span class="hljs-string">&apos;Are you sure?&apos;</span> } </span><span class="xml"><span class="hljs-tag">%&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">td</span>&gt;</span>  
+      <span class="hljs-tag">&lt;/<span class="hljs-name">tr</span>&gt;</span>  
+    <span class="hljs-tag">&lt;<span class="hljs-name">%</span></span></span><span class="ruby"> <span class="hljs-keyword">end</span> </span><span class="xml"><span class="hljs-tag">%&gt;</span>  
+  <span class="hljs-tag">&lt;/<span class="hljs-name">tbody</span>&gt;</span>  
+<span class="hljs-tag">&lt;/<span class="hljs-name">table</span>&gt;</span>
+</span></code></pre>
+<p><img src="161.png" alt="">Figure 2.10.3: Result of the code added to View</p>
+<p>In the view, as shown in Figure 2.10.3, we use <code>.each</code> to print each of the content in the <code>@comments</code> instance variable. In Figure 2.10.3, line 24, <code>comment.post.content</code>, is retrieving content field in <code>Post</code> model. This is because there is a <code>post_id</code> field in our <code>Comment</code> table. The <code>post_id</code> will go to <code>Post</code> table and retreive the row and fetch the content field. In line 31, <code>edit_post_path(comment.post)</code>, the concept is similar. </p>
+<p>To view the page that you just created, insert the address below in your Web Browser. The result is shown in Figure 2.10.4. </p>
+<p><code>localhost:3000/more_info</code></p>
+<p><img src="162.png" alt=""></p>
+<p>Figure 2.10.4: Result of the operation shown in Web Browser</p>
+<p>By looking at the result as shown in Figure 2.10.4, we can see that we managed to reference the <code>Post</code> model from Comment model easily by referencing. From the result, we can see that there are two <code>posts</code>, <code>Hello World</code> and <code>Hello 2</code>. There are three comments <code>First</code>, <code>Second</code>, and <code>Fourth</code> that belongs to <code>Hello World</code> and there is only one comment Third that belongs to <code>Hello 2</code>. If everything is done correctly, you should be able to use the perform each operation successfully as shown in the description of the link: <code>Show Comment</code>, <code>Edit Comment</code>, <code>Destroy Comment</code>, <code>Show Post</code>, <code>Edit Post</code>, and <code>Destroy Post</code>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="BeforeWeBegin.html#16-ruby-gems" class="navigation navigation-prev " aria-label="Previous page: 1.6 Ruby Gems">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="CreateARailsApplication.html#21-ruby-on-rails-mvc" class="navigation navigation-next " aria-label="Next page: 2.1 Ruby on Rails MVC">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Chapter 2. Create a Rails Application","level":"1.8.2","depth":2,"next":{"title":"2.1 Ruby on Rails MVC","level":"1.8.2.1","depth":3,"anchor":"#21-ruby-on-rails-mvc","path":"CreateARailsApplication.md","ref":"CreateARailsApplication.md#21-ruby-on-rails-mvc","articles":[]},"previous":{"title":"1.6 Ruby Gems","level":"1.8.1.6","depth":3,"anchor":"#16-ruby-gems","path":"BeforeWeBegin.md","ref":"BeforeWeBegin.md#16-ruby-gems","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","theme-default","ga","fontsettings","sharing","last-modified","insert-logo","-lunr","-search","search-plus","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"last-modified":{},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"favicon":"favicon.ico","custom-favicon":{},"ga":{"configuration":"auto","token":"UA-33042264-3"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchors":{},"insert-logo":{"style":"background: none;","url":"melvinchng-200.png"},"search-plus":{}},"theme":"default","author":"Melvin Ch'ng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Ruby On Rails Tutorial","language":"en","gitbook":"*","description":"Introduction To Web Development"},"file":{"path":"CreateARailsApplication.md","mtime":"2018-08-16T14:49:02.425Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-23T08:06:30.739Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+
+    </body>
+</html>
+

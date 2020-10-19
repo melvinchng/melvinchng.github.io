@@ -1,0 +1,560 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Setup · Netgear Orbi: Streamyx & UniFi Setup Guide</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Melvin Ch'ng">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="setup.html" />
+    
+    
+    <link rel="prev" href="result.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Cover
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="About.html">
+            
+                <a href="About.html">
+            
+                    
+                    About The Setup Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Acknowledgements.html">
+            
+                <a href="Acknowledgements.html">
+            
+                    
+                    Disclaimer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="SUMMARY.html">
+            
+                <a href="SUMMARY.html">
+            
+                    
+                    Table of Content
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="prerequisite.html">
+            
+                <a href="prerequisite.html">
+            
+                    
+                    Prerequisite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="my_setup.html">
+            
+                <a href="my_setup.html">
+            
+                    
+                    My Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="result.html">
+            
+                <a href="result.html">
+            
+                    
+                    Expected Final Result
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="setup.html">
+            
+                <a href="setup.html#setup">
+            
+                    
+                    Setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="setup.html">
+            
+                <a href="setup.html#step-1-prepare-for-firmware-upgrade">
+            
+                    
+                    Step 1: Prepare for firmware upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="setup.html">
+            
+                <a href="setup.html#step-2-disconnect-devices">
+            
+                    
+                    Step 2: Disconnect Devices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="setup.html">
+            
+                <a href="setup.html#step-3-power-on-the-orbi-router-and-satellites">
+            
+                    
+                    Step 3: Power on the Orbi router and satellite(s)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="setup.html">
+            
+                <a href="setup.html#step-4-connect-to-orbi">
+            
+                    
+                    Step 4: Connect to Orbi 
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="setup.html">
+            
+                <a href="setup.html#step-5-initial-setup">
+            
+                    
+                    Step 5: Initial Setup
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="setup.html">
+            
+                <a href="setup.html#step-6-perform-firmware-upgrade">
+            
+                    
+                    Step 6: Perform Firmware Upgrade
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="setup.html">
+            
+                <a href="setup.html#step-7-setup-pppoe">
+            
+                    
+                    Step 7: Setup PPPoE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="setup.html">
+            
+                <a href="setup.html#step-8a-setup-vlan-id-unifi-user">
+            
+                    
+                    Step 8A: Setup VLAN ID (UniFi User)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="setup.html">
+            
+                <a href="setup.html#step-8b-bridge-mode-streamyx-user">
+            
+                    
+                    Step 8B: Bridge Mode (Streamyx User)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="setup.html">
+            
+                <a href="setup.html#step-9-not-working-read-here">
+            
+                    
+                    Step 9: Not Working? Read Here
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="setup.html">
+            
+                <a href="setup.html#step-10-the-end">
+            
+                    
+                    Step 10: The End
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Setup</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <blockquote>
+<p><em>Last modified: Sun May 05 2019 20:02:09 GMT+0800 (Malay Peninsula Standard Time)</em></p>
+</blockquote>
+<h1 id="setup"><a name="setup" class="plugin-anchor" href="#setup"><i class="fa fa-link" aria-hidden="true"></i></a>Setup</h1>
+<p>Assuming that you are starting from a unit that is fresh from the box (default factory configuration), you should perform the steps in the order this guide is written in.</p>
+<h2 id="step-1-prepare-for-firmware-upgrade"><a name="step-1-prepare-for-firmware-upgrade" class="plugin-anchor" href="#step-1-prepare-for-firmware-upgrade"><i class="fa fa-link" aria-hidden="true"></i></a>Step 1: Prepare for firmware upgrade</h2>
+<p>Assuming that your router and satellites are not at the latest firmware version, we would need to perform a firmware upgrade. If you are already at the latest firmware, proceed to Step 2. </p>
+<p>To upgrade, download a copy of firmware for your router and satellites. Download the latest Netgear Orbi firmware to your computer by visiting the link below. </p>
+<p>Link: <a href="https://www.netgear.com/support/download/" target="_blank">https://www.netgear.com/support/download/</a></p>
+<p>Insert RBK50 (1 router with 1 satellite) or RBK53 (1 router with 2 satellites) as the model number. If you have a different model, insert the model that you have. Do note that the differences between RBR and RBS, where <code>R</code> = Router while <code>S</code> = Satellite.</p>
+<p>Extract Orbi&#x2019;s <code>.img</code> file to your desktop. Do not open the <code>.img</code> file. </p>
+<h2 id="step-2-disconnect-devices"><a name="step-2-disconnect-devices" class="plugin-anchor" href="#step-2-disconnect-devices"><i class="fa fa-link" aria-hidden="true"></i></a>Step 2: Disconnect Devices</h2>
+<p>Now, disconnect everything that you have except your ADSL router (RJ11 or telephone cable) or modem gateway (for Fiber user) that connect to copper telephone cable/fibre network. Connect the router/modem to Orbi by using an ethernet cable. The Port 0 of your router/modem should (must) be connected to <code>Port 0</code> of your Orbi (yellow color port with Internet labelled).</p>
+<p>The result of the operations are shown below.</p>
+<p><img src="5.png" alt=""></p>
+<h2 id="step-3-power-on-the-orbi-router-and-satellites"><a name="step-3-power-on-the-orbi-router-and-satellites" class="plugin-anchor" href="#step-3-power-on-the-orbi-router-and-satellites"><i class="fa fa-link" aria-hidden="true"></i></a>Step 3: Power on the Orbi router and satellite(s)</h2>
+<p>Connect your router and satellite(s) to your power source and turn them on. If you have turned off your modem/router, turn them on now.</p>
+<h2 id="step-4-connect-to-orbi"><a name="step-4-connect-to-orbi" class="plugin-anchor" href="#step-4-connect-to-orbi"><i class="fa fa-link" aria-hidden="true"></i></a>Step 4: Connect to Orbi</h2>
+<p>There are two ways of connecting your device, laptop or desktop, to Netgear Orbi for initial setup: ethernet cable and wireless network (if supported). Also, DO NOT use Orbi App or Smartphone.</p>
+<p>If you choose to use ethernet cable, connect your device to one of the three available ports in Orbi (<code>Port 1</code>, <code>2</code>, or <code>3</code>). </p>
+<p>If you choose to use wireless network, connect your device to Orbi&#x2019;s wireless network. Check the stickers under your Orbi router for the wireless username and password.</p>
+<h2 id="step-5-initial-setup"><a name="step-5-initial-setup" class="plugin-anchor" href="#step-5-initial-setup"><i class="fa fa-link" aria-hidden="true"></i></a>Step 5: Initial Setup</h2>
+<p>If you have Orbi that is fresh out of the box, we have to run through the initial setup. The initial setup is very straight forward as we would just want to bypass the screen so that we can access the advanced setup page.</p>
+<p>To begin, open a Web Browser and insert the IP address <code>192.168.1.1</code> or <code>10.0.0.1</code>. </p>
+<p><img src="6.png" alt=""></p>
+<p>If you are unable to see a page as the figure above, you may have a different IP address. Obtain your gateway IP address from Connect Status Page (Windows OS) or Network (MacOS)</p>
+<p>Figure below shows my default Gateway for the wireless network that I connected to in Windows Machine is <code>192.168.1.2</code>.</p>
+<p><img src="7.png" alt=""></p>
+<p>Figure below shows the default Gateway for the Ethernet network connection in a Macintosh Machine is <code>192.168.1.1</code>.</p>
+<p><img src="8.png" alt=""></p>
+<p>Then, agree the terms and conditions shown on the screen.</p>
+<p><img src="9.png" alt=""></p>
+<p>On the next screen, select the second option: &#x201C;No, manually enter settings&#x201D;.</p>
+<p><img src="10.png" alt=""></p>
+<p>A pop up window will then show a message regarding network experience. Press &#x201C;OK&#x201D; to proceed.</p>
+<p><img src="11.png" alt="">    </p>
+<p>You will then asked if you would like to add your Orbi satellites. To make everything easy, we will just skip this step for now and add it later.</p>
+<p><img src="12.png" alt=""></p>
+<p>On the next screen, insert all the required information for your <code>Admin</code> account. </p>
+<p><img src="13.png" alt=""></p>
+<p>You will then asked to change modify your Wireless Network <code>name</code> and <code>password</code>. Modify it to your personal preferences.</p>
+<p><img src="14.png" alt=""></p>
+<p>The setup wizard will then attempt to check the internet connection. Since we have not began configuring our network, it will fail. </p>
+<p><img src="15.png" alt=""></p>
+<p>On the next screen, the setup wizard will attempt to perform a firmware upgrade. Since there is no active internet connection, it will not be able to perform the upgrade.</p>
+<p><img src="16.png" alt=""></p>
+<p>You will then be redirected to Netgear Website. Since there is no active internet connection, it would fail as well.</p>
+<p><img src="17.png" alt=""></p>
+<p>Now, go back to the Netgear Web Interface for your Orbi router by visiting the IP address that you put in earlier (<code>192.168.1.1</code>, <code>10.0.0.1</code>, or any other IP address that you used). You will see a list of tabs and information of your router.</p>
+<p><img src="18.png" alt=""></p>
+<h2 id="step-6-perform-firmware-upgrade"><a name="step-6-perform-firmware-upgrade" class="plugin-anchor" href="#step-6-perform-firmware-upgrade"><i class="fa fa-link" aria-hidden="true"></i></a>Step 6: Perform Firmware Upgrade</h2>
+<p>To perform firmware upgrade, visit the Netgear Web Interface for your Orbi router by visiting the IP address that you put in earlier (<code>192.168.1.1</code>, <code>10.0.0.1</code>, or any other IP address that you used). </p>
+<p><img src="19.png" alt=""></p>
+<p>Go to <code>Advance</code> &gt; <code>Firmware Upgrade</code> &gt; <code>Manual Update</code>.</p>
+<p>Select &#x201C;Browse&#x201D; and go to the directory where you have your Orbi router&#x2019;s firmware you placed (refer to Step 1). Select the firmware that ends with <code>RBR</code>. Then, select &#x201C;Upload&#x201D; to upload the firmware. </p>
+<p>Your router will then be upgraded and rebooted. It may take a few minutes.</p>
+<p><img src="20.png" alt=""></p>
+<h2 id="step-7-setup-pppoe"><a name="step-7-setup-pppoe" class="plugin-anchor" href="#step-7-setup-pppoe"><i class="fa fa-link" aria-hidden="true"></i></a>Step 7: Setup PPPoE</h2>
+<p>After the firmware upgrade, if you are using a wireless connection to access the Web Interface, make sure that you are still at the same Orbi wireless network that you were in earlier.</p>
+<p>Visit the Netgear Web Interface for your Orbi router by visiting the IP address that you put in earlier (192.168.1.1, 10.0.0.1, or any other IP address that you used). </p>
+<p>Go to <code>Basic</code> &gt; <code>Internet</code>.</p>
+<p>Under the Internet Setup section, select &#x201C;Yes&#x201D; for the option where it ask whether your Internet connection require a login.</p>
+<p>Then, select &#x201C;PPPoE&#x201D; for Internet Service Provider.</p>
+<p>Enter your UniFi or Streamyx <code>Login ID</code> and <code>Password</code> in the <code>Login</code> and <code>Password</code> field. </p>
+<p>Select Always On for Connection Mode.</p>
+<p>Leave the rest of the setting default. Figure below shows the result of the operation above. If you are using UniFi, your Login information will contain <code>@unifi</code> instead of <code>@streamyx</code>. </p>
+<p>Choose &#x201C;Apply&#x201D; to save the configurations. </p>
+<p><img src="21.png" alt=""></p>
+<h2 id="step-8a-setup-vlan-id-unifi-user"><a name="step-8a-setup-vlan-id-unifi-user" class="plugin-anchor" href="#step-8a-setup-vlan-id-unifi-user"><i class="fa fa-link" aria-hidden="true"></i></a>Step 8A: Setup VLAN ID (UniFi User)</h2>
+<p>If you are streamyx user, please skip this step.</p>
+<p>Go to <code>Advanced</code> &gt; <code>Advanced Setup</code> &gt; <code>VLAN/Bridge Setting</code>.</p>
+<p>Enable VLAN by selecting the checkbox that says &#x201C;Enable VLAN/Bridge Group&#x201D;. Then select the radio button that says &#x201C;By VLAN tag group&#x201D;
+Select the first Radio Button in the table and press &#x201C;edit&#x201D;. Enter the value <code>500</code> for <code>VLAN ID</code> and <code>1</code> for <code>Priority</code> field.</p>
+<p><img src="22.png" alt=""></p>
+<p>Press Apply to Save the setting. At this point, you should have a working Internet connection. If you are unable to access Internet after a few minutes, check your UniFi username and password to make sure that they are correct.</p>
+<p><strong>If you do not have IPTV that come with UniFi, please skip this step.</strong></p>
+<p>In the same page, add more VLAN rules.</p>
+<p>Enter the value <code>600</code> for V<code>LAN ID</code> and <code>5</code> for Priority field for your UniFi IPTV. If you have your IPTV plugged in at <code>Port 3</code>, check the <code>Port 3</code> box. The box that is checked should match the port that you have your IPTV ethernet plugged in.</p>
+<p><img src="23.png" alt=""></p>
+<p>Press Apply to Save the setting.</p>
+<p>At this point, you should have a working IPTV.</p>
+<h2 id="step-8b-bridge-mode-streamyx-user"><a name="step-8b-bridge-mode-streamyx-user" class="plugin-anchor" href="#step-8b-bridge-mode-streamyx-user"><i class="fa fa-link" aria-hidden="true"></i></a>Step 8B: Bridge Mode (Streamyx User)</h2>
+<p><strong>If you are UniFi user, please skip this step.</strong></p>
+<p>In order to have Orbi to work with your ADSL (telephone cable) modem/router, you have to set your ADSL modem setting to Bridge Mode. Most of the modern ADSL modem routers should have bridge mode.</p>
+<p><img src="24.png" alt=""></p>
+<p>After you have set it to Bridge Mode, your Internet connection should work within a few minutes.  If you are unable to access Internet after a few minutes, check your UniFi username and password to make sure that it is correct.</p>
+<h2 id="step-9-not-working-read-here"><a name="step-9-not-working-read-here" class="plugin-anchor" href="#step-9-not-working-read-here"><i class="fa fa-link" aria-hidden="true"></i></a>Step 9: Not Working? Read Here</h2>
+<p>If you are still unable to connect to the Internet, you may want to go to advance setting and change the DNS to Google DNS or OpenDNS. Screenshot below shows the DNS has been changed to Google DNS <code>8.8.8.8</code> and <code>8.8.4.4</code>.</p>
+<p><img src="25.jpg" alt=""></p>
+<h2 id="step-10-the-end"><a name="step-10-the-end" class="plugin-anchor" href="#step-10-the-end"><i class="fa fa-link" aria-hidden="true"></i></a>Step 10: The End</h2>
+<p>Thank you for reading and enjoy your Orbi!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="result.html" class="navigation navigation-prev " aria-label="Previous page: Expected Final Result">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="setup.html#step-1-prepare-for-firmware-upgrade" class="navigation navigation-next " aria-label="Next page: Step 1: Prepare for firmware upgrade">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Setup","level":"1.8","depth":1,"next":{"title":"Step 1: Prepare for firmware upgrade","level":"1.8.1","depth":2,"anchor":"#step-1-prepare-for-firmware-upgrade","path":"setup.md","ref":"setup.md#step-1-prepare-for-firmware-upgrade","articles":[]},"previous":{"title":"Expected Final Result","level":"1.7","depth":1,"path":"result.md","ref":"result.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","theme-default","ga","fontsettings","sharing","last-modified","insert-logo","-lunr","-search","search-plus","custom-favicon"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"last-modified":{},"fontsettings":{"family":"sans","size":2,"theme":"white"},"highlight":{},"favicon":"favicon.ico","custom-favicon":{},"ga":{"configuration":"auto","token":"UA-33042264-4"},"sharing":{"all":["facebook","google","twitter","weibo","instapaper"],"facebook":true,"google":false,"instapaper":false,"twitter":true,"vk":false,"weibo":false},"theme-default":{"showLevel":false,"styles":{"ebook":"styles/ebook.css","epub":"styles/epub.css","mobi":"styles/mobi.css","pdf":"styles/pdf.css","print":"styles/print.css","website":"styles/website.css"}},"anchors":{},"insert-logo":{"style":"background: none;","url":"melvinchng-200.png"},"search-plus":{}},"theme":"default","author":"Melvin Ch'ng","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Netgear Orbi: Streamyx & UniFi Setup Guide","language":"en","gitbook":"*","description":"Step by step setup tutorial to get your Orbi to work with Streamyx or UniFi"},"file":{"path":"setup.md","mtime":"2019-05-05T12:02:09.032Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-05-05T12:09:17.725Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+
+    </body>
+</html>
+

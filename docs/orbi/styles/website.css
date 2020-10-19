@@ -1,0 +1,16 @@
+.navigation-prev,
+.navigation-next,
+.gitbook-link {
+    display: none !important;
+}
+
+@media print{
+  body {
+    display:none;
+    visibility:hidden;
+  }
+}
+
+img {
+  pointer-events: none;
+}
