@@ -1,4 +1,2 @@
 User-agent: *
-Disallow: /about/
-Disallow: /whereis
-Disallow: /cv
+Disallow: /
